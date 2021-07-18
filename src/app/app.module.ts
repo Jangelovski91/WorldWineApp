@@ -10,6 +10,7 @@ import { WineDetailsComponent } from './wines/wine-details/wine-details.componen
 import { WineItemComponent } from './wines/wine-list/wine-item/wine-item.component';
 import { WineCartComponent } from './wine-cart/wine-cart.component';
 import { WineCartEditComponent } from './wine-cart/wine-cart-edit/wine-cart-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WineCartEditComponent } from './wine-cart/wine-cart-edit/wine-cart-edit
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

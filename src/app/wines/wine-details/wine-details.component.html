@@ -1,28 +1,35 @@
 <div class="row">
     <div class="col-xs-12">
-        <img src="" alt="" class="img-responsive">
+        <h1>{{wine.name + " wine"}}</h1>
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
+        <img [src]="wine.imagePath" alt="recipe.name" class="img-responsive" style="max-width: 240px">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        {{wine.description}}
+    </div>
+    <div class="col-xs-12">
+        Order
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
         <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle">Manage Wine Cart
-                 <span class="caret"></span>
+            <button type="button" class="btn btn-primary dropdown-toggle">Add to Wine Cart
+
             </button>
-            <ul class="dropdown-menu">    
+            <ul class="dropdown-menu">
                 <li><a routerLink="/">Add to your Wine Cart</a></li>
                 <li><a routerLink="/">Edit Wine</a></li>
                 <li><a routerLink="/">Delete Wine</a></li>
 
             </ul>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-12">
-        Description
-    </div>
-    <div class="col-xs-12">
-        Order
     </div>
 </div>

@@ -1,16 +1,16 @@
 <nav class="navbar navbar-default">
-    <div class="container-fluid">   
+    <div class="container-fluid">
         <div class="navbar-header">
             <a routerLink="/" class="navbar-brand">World Wines</a>
         </div>
 
         <div class="navbar-default">
             <ul class="nav navbar-nav">
-                <li><a routerLink="/">Wines</a></li>
-                <li><a routerLink="/">Wine Cart</a></li>
+                <li><a routerLink="/" (click)="onSelect('wines')">Wines</a></li>
+                <li><a routerLink="/" (click)="onSelect('wine-cart')">Wine Cart</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown"> 
+                <li class="dropdown">
                     <a routerLink="/" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a routerLink="/">Save Data</a></li>

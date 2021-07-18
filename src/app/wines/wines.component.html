@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-md-5">
-        <app-wine-list></app-wine-list>
+        <app-wine-list (wineWasSelected)="selectedWine = $event"></app-wine-list>
     </div>
     <div class="col-md-7">
-        <app-wine-details></app-wine-details>
+        <app-wine-details *ngIf="selectedWine" [wine]="selectedWine"></app-wine-details>
+
     </div>
 </div>

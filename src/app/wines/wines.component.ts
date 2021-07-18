@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Wine } from './wine.model';
 
 @Component({
   selector: 'app-wines',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WinesComponent implements OnInit {
 
+  selectedWine: Wine;
   constructor() { }
 
   ngOnInit(): void {

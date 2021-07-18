@@ -1,9 +1,11 @@
 export class Order {
-    public wineName: string;
-    public numberOfBottles: number;
+    public name: string;
+    public numOfBottles: number
+    public pricePerBottle: number
 
-    constructor(name: string, numOfBottles: number){
-        this.wineName = name,
-        this.numberOfBottles = numOfBottles
+    constructor(name: string, numOfBottles: number, pricePerBottle: number) {
+        this.name = name;
+        this.numOfBottles = numOfBottles;
+        this.pricePerBottle = pricePerBottle;
     }
 }
